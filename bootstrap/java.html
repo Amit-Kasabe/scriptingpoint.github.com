@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Java Programming
+	</title>
+	<link rel="stylesheet" type="text/css" href="java.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel='icon' href='Img/fav2.png' type='image/x-icon' sizes="16x16" />
+	<link rel="stylesheet" type="text/css" href="gallary.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<style>
+
+#ads{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+	
+</style>
+<script>
+  $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+
+<body>
+	<header>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark mt-1" id="top">
+  <!-- Brand -->
+  <a class="navbar-brand text-danger" href="#">SaiInfoTech</a>
+<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
+    <span class="navbar-toggler-icon"></span>
+</button>
+  <!-- Links -->
+  <div class="collapse navbar-collapse text-center" id="navbarid">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Programming</a>
+    </li>
+        <li class="nav-item">
+      <a class="nav-link" href="hacking.html">Hacking</a>
+    </li>
+        <li class="nav-item">
+      <a class="nav-link" href="#">Articles</a>
+    </li>
+        <li class="nav-item">
+      <a class="nav-link" href="java.html">Java</a>
+    </li>
+ 
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        popular
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Bootstrap</a>
+        <a class="dropdown-item" href="#">Ajax</a>
+        <a class="dropdown-item" href="#">JQuery</a>
+      </div>
+    </li>
+            <li class="nav-item">
+      <a class="nav-link" href="#joinus">Sign Up</a>
+    </li>
+        <li class="nav-item">
+      <a class="nav-link" href="login.html">Login</a>
+    </li>
+  </ul>
+</div>
+  <form class="form-inline ml-5" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-primary mt-1" type="submit">Search</button>
+  </form>
+
+</nav>
+<!-- jumbotrone starts -->
+<div class="jumbotron bg-warning">
+  <div class="jumbotron__body">
+    <div class="container">
+      <h1>Welcome To Java Programming</h1>
+      <p>Write Once Run Everywhere!</p>
+      <p>
+      	
+
+        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Sign Up</a> -->
+        <a class="btn btn-default btn-danger" href="#lets-begin" role="button" id="take-a-tour">Take Tour</a>
+
+      </p>
+      <div class="jumbotrontopad">
+          <strong class="text-danger"><i class="fa fa-line-chart text-danger"></i> Your Success is in Your hand..</strong>
+          <div class="row">
+          	<div class="col-lg-12 col-sm-12 col-12">
+         <i class="fa fa-laptop" aria-hidden="true" id="laptop"></i>
+         </div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <div >
+  </div>
+
+</header>
+<section>
+    <div class="container-fluid mb-5" id="lets-begin">
+  <div class="row">
+    <div class="col-lg-2 col-2 col-md-12" style="background-color:lavender";>
+      <div>
+        <h6>Click To Learn</h6>
+        <p><a href="Downloadjava.html" style="color: #01579b;font-family: 'Trade Winds';">Download Java</a></p>
+      <p><a href="" class="active text-secondary"style="color: #01579b;font-family: 'Trade Winds';">Introduction To Java</a></p>
+      <p><a href="variablesinjava.html"style="color: #01579b;font-family: 'Trade Winds';">Variables In Java</a></p>
+      <p><a href="Hellojavaprogram.html"style="color: #01579b;font-family: 'Trade Winds';">Hello Program in Java</a></p>
+      <p><a href="#"style="color: #01579b;font-family: 'Trade Winds';">Demo</a></p>
+      <h5 class="text-success">Control statements</h5>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java If-Else</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java Switch Case</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java For Loops</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java While Loop</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java Break</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java Continue</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java Demo</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java Demo</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java If-Else</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java Switch Case</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java For Loops</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java While Loop</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java Break</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java Continue</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java Demo</a></p>
+      <p><a href="#" style="color: #01579b;font-family: 'Trade Winds';">java Demo</a></p> 
+      </div>
+    </div>
+    <div class="col-lg-8 col-2 col-md-12">
+      <h1 class="text-danger">Introducation To java</h1>
+      <p class="text-secondary">Java is a programming language and computing platform first released by Sun Microsystems in 1995. There are lots of applications and websites that will not work unless you have Java installed, and more are created every day. Java is fast, secure, and reliable. From laptops to datacenters, game consoles to scientific supercomputers, cell phones to the Internet, Java is everywhere!</p>
+      <!-- <hr class="w-50 float-left"><br> -->
+      <h1 class="text-primary">Why to choose java?</h1>
+       <h2 class="text-warning">java is easy to learn :-</h2>
+        
+
+
+      </i>
+      <p class="text-secondary">Many would be surprised to see this one of the top reasons for learning Java or considering it as the best programming language, but it is. If you have a steep learning curve, it would be difficult to get productive in a short span of time, which is the case with most of the professional project.
+
+        Java has fluent English like syntax with minimum magic characters e.g., Generics angle brackets, which makes it easy to read Java program and learn quickly.</p>
+        <p>
+  
+        <h2 class="text-warning">Java Is Object Oriented Programming Language :-</h2>
+        <p class="text-secondary">
+          Another reason, which made Java popular is that it's an Object Oriented Programming language. Developing an OOP application is much easier, and it also helps to keep system modular, flexible, and extensible.
+          <br><span class="text-dark">What actually Object oriented programming means?</span>->As the name suggests, Object-Oriented Programming or OOPs refers to languages that uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+</p>
+          <h6>which are oops concepts?</h6>
+            <ol class="text-justify">
+              <li> Polymorphism</li>
+              <li>Inheritance</li>
+              <li>Encapsulation</li>
+              <li>Abstraction</li>
+              <li>Method</li>
+              <li>message passing</li>
+              <li>object</li>
+              <li>class</li>
+            </ol>
+        <p class="text-secondary">
+        We'll see in detail about in oops concept section  
+        </p>
+        <h2 class="text-warning">Java Is Free</h2>
+        <p class="text-secondary">People like FREE things, Don't you? So if a programmer wants to learn a programming language or an organization wants to use technology, COST is an important factor. Since Java is free from the start, i.e., you don't need to pay anything to create Java application.</p>
+
+
+        <h2 class="text-warning">Java Is Platform Independent</h2>
+        <p class="text-secondary">
+          Since java was developed ,the main reason behind java got popular was its <span class="text-uppercase font-weight-bold">platform independency</span>,It means it is unlike c and c++ programming languages where as a developer you need to depend on the machin,cause we can write code on one machine and can run on any of the mchine where ever we want.It Says <span class="text-uppercase font-weight-bold text-danger">write once run everywhere</span>
+        </p>
+
+        <h2 class="text-warning">Multithreaded</h2>
+        <p class="text-secondary">
+          Java supports multithreaded.  Thread is a lightweight process that helps us to develop a program that can do multiple tasks at a time and it increases CPU efficiency.  It is not supported by other programming languages.
+        </p>
+        <h2 class="text-warning">Robust</h2>
+        <p class="text-secondary"> Robustness means that which is strong, powerful, and not affected by others.  But, in what sense is Java strong and powerful?  Here, robust means reliable and there is no programming language as reliable as Java.  It provides a very low chance of error, for the programmer, because of its strong memory allocation, garbage collection mechanism, and exception handling, compared to other programming languages.</p>
+  </div>
+    <div class="col-lg-2 col-2 col-md-12" style="background-color:lavender;">.Ads
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section class="w-100">
+ <footer class="mainfooter mt-0 " role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>About us</h4>
+          <ul class="list-unstyled">
+            <li><a href="#"></a></li>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Visit Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">News and Updates</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Tutorials</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Website Tutorial</a></li>
+            <li><a href="#">SEO</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Social Media Marketing</a></li>
+            <!-- <li><a href="#">FAQs</a></li>
+            <li><a href="#">Webmaster</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Downloads</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">PDF Books</a></li>
+            <li><a href="#">Source Code</a></li>
+            <li><a href="#">plugins</a></li>
+            <li><a href="#">Editors</a></li>
+            <li><a href="#">Free Notes</a></li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h4>Follow Us</h4>
+            <ul class="social-network social-circle">
+             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#" class="icoYoutube" title="youtube"><i class="fa fa-youtube"></i></a></li>
+             
+             <li><a href="#" class="icoInstagram" title="instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>       
+    </div>
+    </div>
+  <div class="row">
+    <div class="col-md-12 copy">
+      <i class="fa fa-java"></i>
+      <p class="text-center">&copy; Copyright 200 - SaiInfoTech.  All rights reserved.</p>
+      <p class="text-center">Designed And Developed By <strng>Dr.Priti.A.Kasabe</strng></p>
+    </div>
+  </div>
+  </div>
+  </div>
+</footer>
+</section>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<style>
+		.form-body{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+	</style>
+	<script>
+		function Myfunction(){
+			var a=document.getElementById("pwd");
+			if (a.type==="password") {
+				a.type="text";
+			}
+			else{
+				a.type="password";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="form-body" >
+		<form>
+			<input type="password" name="password" placeholder="password" id="pwd">
+			<input type="checkbox" onclick="Myfunction()">
+		</form>
+	</div>
+</body>
+</html>

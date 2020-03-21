@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        
+    </title>
+    <style>
+       div#rs-partner {
+  padding: 60px 0 63px;
+}
+div#rs-partner .partner-item img {
+  width: inherit;
+}
+.rs-footer {
+  background-color: #222;
+  color: #fff;
+}
+.rs-footer .footer-title {
+  margin-bottom: 40px;
+  padding-bottom: 5px;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  text-transform: uppercase;
+}
+.rs-footer .footer-title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 1px;
+  width: 50px;
+  background-color: #fff;
+}
+.rs-footer .footer-top {
+  padding: 70px 0;
+  background: #83b614;
+}
+.rs-footer .footer-top .about-widget img {
+  margin-bottom: 25px;
+}
+.rs-footer .footer-top .about-widget ul.footer-address li i {
+  margin-right: 8px;
+}
+.rs-footer .footer-top .about-widget ul.footer-address li a {
+  color: #fff;
+}
+.rs-footer .footer-top .recent-post-widget .post-item {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.rs-footer .footer-top .recent-post-widget .post-item .post-date {
+  width: 70px;
+  height: 65px;
+  flex: 0 0 70px;
+  text-align: center;
+  background-color: #6a9708;
+  color: #fff;
+  margin-right: 15px;
+}
+.rs-footer .footer-top .recent-post-widget .post-item .post-date > span {
+  display: block;
+}
+.rs-footer .footer-top .recent-post-widget .post-item .post-date > span:first-child {
+  margin-top: 6px;
+}
+.rs-footer .footer-top .recent-post-widget .post-item .post-date > span:last-child {
+  font-size: 13px;
+}
+.rs-footer .footer-top .recent-post-widget .post-item .post-title {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.rs-footer .footer-top .recent-post-widget .post-item .post-title a {
+  color: #fff;
+}
+.rs-footer .footer-top .recent-post-widget .post-item .post-title a:hover,
+.rs-footer .footer-top .recent-post-widget .post-item .post-title a:focus {
+  color: #e9e9e9;
+}
+.rs-footer .footer-top .recent-post-widget .post-item .post-category {
+  font-size: 13px;
+}
+.rs-footer .footer-top .recent-post-widget .post-item + .post-item {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #fff;
+}
+.rs-footer .footer-top .sitemap-widget li + li {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #fff;
+}
+.rs-footer .footer-top .sitemap-widget li a {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+}
+.rs-footer .footer-top .sitemap-widget li a:hover,
+.rs-footer .footer-top .sitemap-widget li a:focus {
+  color: #eee;
+}
+.rs-footer .footer-top .sitemap-widget li a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: #fff;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.rs-footer .footer-top .recent-project li {
+  display: inline-block;
+  margin: 2px 3px;
+  overflow: hidden;
+  position: relative;
+  width: 78px;
+}
+.rs-footer .footer-top .recent-project li img {
+  height: 100%;
+}
+.rs-footer .footer-top .recent-project li a {
+  display: block;
+}
+.rs-footer .footer-top .recent-project li a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+}
+.rs-footer .footer-top .recent-project li a:hover:after {
+  opacity: 1;
+}
+.rs-footer .footer-bottom {
+  padding: 20px 0 15px;
+  background: #6a9708;
+}
+.rs-footer .footer-bottom .copyright p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+.rs-footer .footer-bottom .copyright a {
+  color: #fff;
+}
+.rs-footer .footer-bottom .copyright a:hover,
+.rs-footer .footer-bottom .copyright a:focus {
+  color: #afb0b2;
+}
+.rs-footer .footer-bottom .footer-bottom-menu {
+  display: inline-block;
+}
+.rs-footer .footer-bottom .footer-bottom-menu ul {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  padding: 0;
+  list-style: none;
+}
+.rs-footer .footer-bottom .footer-bottom-menu ul > * {
+  -ms-flex: none;
+  -webkit-flex: none;
+  flex: none;
+  padding-left: 10px;
+  position: relative;
+}
+.rs-footer .footer-bottom .footer-bottom-menu ul li:before {
+  display: inline-block;
+}
+.rs-footer .footer-bottom .footer-bottom-menu ul li:nth-child(n+2):before {
+  content: ":";
+  margin-right: 10px;
+}
+.rs-footer .footer-bottom .footer-bottom-menu ul li a {
+  color: #afb0b2;
+}
+.rs-footer .footer-bottom .footer-bottom-menu ul li a:hover,
+.rs-footer .footer-bottom .footer-bottom-menu ul li a:focus {
+  color: #fff;
+}
+.rs-footer .footer-bottom .footer-bottom-share {
+  display: inline-block;
+}
+.rs-footer .footer-bottom .footer-bottom-share ul {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.rs-footer .footer-bottom .footer-bottom-share ul li {
+  display: inline-block;
+}
+.rs-footer .footer-bottom .footer-bottom-share ul li + li {
+  margin-left: 10px;
+}
+.rs-footer .footer-bottom .footer-bottom-share ul li a {
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background: #83b614;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  transition: all 0.3s ease 0s;
+}
+.rs-footer .footer-bottom .footer-bottom-share ul li a:hover {
+  background-color: #6a9708;
+  color: #fff;
+}
+/* -----------------------
+    17. Scroll Up
+--------------------------*/
+#scrollUp {
+  text-align: center;
+  bottom: 40px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 20px;
+  z-index: 999;
+  border-radius: 50px 50px 4px 4px;
+}
+#scrollUp i {
+  background: #83b614;
+  border-radius: 50%;
+  height: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  width: 42px;
+  color: #fff;
+  line-height: 36px;
+  transition: all 0.3s ease 0s;
+  margin-left: 2px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+#scrollUp i:hover {
+  background-color: #6a9708;
+}
+/* ------------------------------------
+    19. Counter up
+  ---------------------------------------*/
+.counter-top-area {
+  background: url(images/about/counter-up.jpg) no-repeat scroll 0 0;
+  background-attachment: fixed;
+  transition: all 0.3s ease 0s;
+  background-size: cover;
+  background-position: center center;
+  line-height: 0;
+  position: relative;
+}
+.counter-top-area .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #83b614;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+.counter-top-area .sec-title {
+  position: relative;
+}
+.counter-top-area .sec-title p {
+  line-height: 26px;
+}
+.counter-top-area .sec-title-index-3 h2 {
+  color: #fff;
+  margin: 0 0 20px;
+}
+.counter-top-area .sec-title-index-3 p {
+  color: #fff;
+  line-height: 23px;
+  margin: 0 0 12px;
+}
+.counter-top-area .counter-slider {
+  position: relative;
+  margin-top: 32px;
+}
+.counter-top-area .counter-slider:after {
+  position: absolute;
+  content: '';
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  background: #0000003b;
+}
+.counter-top-area .counter-slider .carousel-indicators {
+  bottom: 9px;
+}
+.counter-top-area .rs-counter-list {
+  text-align: center;
+  padding: 25px 20px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  transition: .20s;
+}
+.counter-top-area .rs-counter-list .parsent:after {
+  content: '%';
+}
+.counter-top-area .rs-counter-list:hover {
+  border: 3px solid #fff;
+}
+.counter-top-area .rs-counter-list h3 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0;
+  color: #ffffff;
+  margin-top: 20px !important;
+  margin-bottom: 12px;
+}
+.counter-top-area .rs-counter-list h4 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  margin-left: 5px;
+  font-size: 20px;
+}
+.counter-top-area .rs-counter-list i {
+  color: #fff;
+  display: inline-block;
+  font-size: 50px;
+}
+.counter-top-area.defult-style {
+  background: url(images/bg/bg2.jpg) no-repeat scroll 0 0;
+  background-size: cover;
+}
+.counter-top-area.defult-style .rs-counter-list {
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  padding: 34px 20px 40px;
+}
+.counter-top-area.defult-style .rs-counter-list h3 {
+  margin-top: 0 !important;
+  color: #757575;
+}
+.counter-top-area.defult-style .rs-counter-list h4 {
+  margin: 20px 0 0;
+  position: relative;
+  padding: 20px 0 0;
+  color: #323232;
+}
+.counter-top-area.defult-style .rs-counter-list h4:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #83b614;
+  content: "";
+}
+/* ------------------------------------
+    20. Breadcrumbs
+  ---------------------------------------*/
+.rs-breadcrumbs {
+  background: url(images/header/1.jpg) center top no-repeat;
+  background-size: cover;
+}
+.rs-breadcrumbs.sec-spacer {
+  padding: 40px 0;
+}
+.rs-breadcrumbs .page-title {
+  font-size: 36px;
+  margin: 4px 0 0;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  float: left;
+  line-height: 45px;
+}
+.rs-breadcrumbs .breadcrumbs-inner {
+  overflow: hidden;
+}
+.rs-breadcrumbs ul {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 5px 20px;
+  float: right;
+  margin-top: 8px;
+}
+.rs-breadcrumbs ul li {
+  color: #83b614;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+}
+.rs-breadcrumbs ul li a {
+  color: #ffffff;
+  position: relative;
+  padding-right: 24px;
+}
+.rs-breadcrumbs ul li a:after {
+  background-color: white;
+  content: "";
+  height: 15px;
+  width: 2px;
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  transform: rotate(33deg);
+}
+.rs-breadcrumbs ul li a.active {
+  color: #ffffff;
+}
+    </style>
+</head>
+<body>
+</div>
+        <!-- Footer Start -->
+        <footer id="rs-footer" class="rs-footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="about-widget">
+                                 <h3 class="footer-title">Head Office</h3>
+                                <!-- <img src="images/logo-2.png" alt="Footer Logo"> -->
+                                <p>4th floor,Bhosale Shinde Arcade, JM Road, Deccan, Pune-411004.</p>
+                                <ul class="footer-address">
+                                    <li><i class="fa fa-mobile"></i><a href="tel:+917057101010">(+91) 7057101010</a></li>
+                                    <li><i class="far fa-envelope"></i><a href="mailto:info@bhartiinstitute.com">info@bhartiinstitute.com </a></li>
+                                    <li><i class="fab fa-dribbble"></i><a href="https://www.bhartisharemarket.com/">
+www.bhartisharemarket.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="footer-title">Company Rating</h5>
+                            <!-- Newsletter Start -->
+                            <div class="news-info">
+                                <p class="news-note white-color">Bharti Institute Google Reviewed by 176 Peoples. Rated: 4.5 / 5</p>
+                            </div>
+                            <center>
+                            <div class="news-form footer-form" style="width: 166px; text-align: center; font-size: 16px; font-weight: 500; height: 43px;">
+                                <button style="margin-top: 2px; border: none; color: #fff; background: #83b614; border-radius: 43px; outline: none; padding: 7.5px 22px; transition: 0.4s; -webkit-transition: 0.4s;"><a href="enquiry.html" style="color: white;">Class Enquiry</a></button>
+                            </div>
+                            </center>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <h5 class="footer-title">OUR SITEMAP</h5>
+                            <ul class="sitemap-widget">
+                                <li class="active"><a href="index.html">Home Page</a></li>
+                                <li><a href="about-company.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog.html">Blog Posts</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="terms.html">Terms And Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="footer-title">SUPPORT</h5>
+                            <div class="recent-post-widget">
+                                <div class="post-item">
+                                    <div class="post-date">
+                                      
+                                        <span style="margin-top: 23px;"><h5 style="color: white;">Call</h5></span>
+                                    </div>
+                                    <div class="post-desc" style="margin-top: 20px;">
+                                        <span class="post-title" ><a href="tel:+919368303030">(+91) 9368303030</a></span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="post-item">
+                                    <div class="post-date">
+                                        <span style="margin-top: 23px;"><h5 style="color: white;">Email</h5></span>
+                                    </div>
+                                    <div class="post-desc" style="margin-top: 20px;">
+                                        <span class="post-title"><a href="mailto:support@bhartiinstitute.com">support@bhartiinstitute.com</a></span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="copyright">
+                                <p>&copy; 2019 <a href="#">Ravindra Bharti Education Institute Pvt Ltd</a>. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="text-right ft-bottom-right">
+                                <div class="footer-bottom-share">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+</body>
+</html>

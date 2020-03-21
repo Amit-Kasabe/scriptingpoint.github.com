@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+  <link rel='icon' href='fav2.png' type='image/x-icon' sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="gallary.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" href="validation.js"></script>
+  <style>
+
+ 	.carousel-inner{
+		width: 100%;
+		height: 100%;
+ 	}
+  #ctn{
+    width: 100%;
+  }
+     #loading{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #fff url(Img/bar.gif) no-repeat center;
+            z-index: 99999990000;
+           
+        }
+
+  </style>
+</head>
+<script>
+  function validate(){
+  var username=document.getElementById("email").value;
+  var password=document.getElementById("pwd").value;
+  var repass=document.getElementById("cpwd").value;
+  if (username==""||password==""||repass=="") {
+    alert("you should fill username");
+    return false;
+  }
+  if (password.length<8) {
+    alert("password must contain atleasr 8 charaters..");
+    return false;
+  }
+    if (repass.length<8) {
+    alert("password must contain atleasr 8 charaters..");
+    return false;
+  }
+  if (password!=repass) {
+    alert("password don't match..");
+    return false;
+  }
+
+}
+  function visibility() {
+  var x = document.getElementById("pwd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+  function visibility1() {
+  var x = document.getElementById("cpwd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+</script>
+<body onload="myFunction()">
+  <div id="loading"> 
+        
+    </div>
+
+	<header>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark mt-1" id="top">
+  <!-- Brand -->
+  <a class="navbar-brand text-danger" href="#">SaiInfoTech</a>
+<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
+    <span class="navbar-toggler-icon"></span>
+</button>
+  <!-- Links -->
+  <div class="collapse navbar-collapse text-center" id="navbarid">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Programming</a>
+    </li>
+        <li class="nav-item">
+      <a class="nav-link" href="hacking.html">Hacking</a>
+    </li>
+        <li class="nav-item">
+      <a class="nav-link" href="#">Articles</a>
+    </li>
+        <li class="nav-item">
+      <a class="nav-link" href="java.html">Java</a>
+    </li>
+ 
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        popular
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Bootstrap</a>
+        <a class="dropdown-item" href="#">Ajax</a>
+        <a class="dropdown-item" href="#">JQuery</a>
+      </div>
+    </li>
+            <li class="nav-item">
+      <a class="nav-link" href="#joinus">Sign Up</a>
+    </li>
+        <li class="nav-item">
+      <a class="nav-link" href="login.html">Login</a>
+    </li>
+  </ul>
+</div>
+  <form class="form-inline ml-5" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-primary mt-1" type="submit">Search</button>
+  </form>
+
+</nav>
+</header>
+<!-- end -->
+
+<div class="container-fluid mt-3 ml-2 w-100" id="nav">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+  <div class="carousel slide" id="myslider" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Img/js1.jpg" alt="img3.jpg">
+        <div class="carousel-caption">
+          <h2 class="text-warning">Wanna Be WebDeveloper?</h2>
+          <p class="text-warning">Stay With Us To Know More About JavaScript</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Img/back.jpg" alt="img3.jpg">
+        <div class="carousel-caption">
+          <h2 class="text-warning">24/7 Experts Are Available</h2>
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <img src="img/new1.jpg" alt="img3.jpg">
+      </div>
+    </div>
+    <ul class="carousel-indicators">
+      <li data-target="#myslider" data-slide-to="0" class="active">
+        
+      </li>
+      <li data-target="#myslider" data-slide-to="1" class="">
+        
+      </li>
+      <li data-target="#myslider" data-slide-to="2" class="">
+        
+      </li>
+    </ul>
+    <a href="#myslider" data-slide="prev" class="carousel-control-prev">
+      <span class="carousel-control-prev-icon">
+        
+      </span>
+    </a>
+    <a href="#myslider" data-slide="next" class="carousel-control-next">
+      <span class="carousel-control-next-icon">
+        
+      </span>
+    </a>
+    </div>
+  </div>
+  </div>
+</div>
+
+</header>
+<section>
+  <div class="container-fluid mt-5 mb-5" id="ctn">
+    <h1 class="text-center text-danger">About Us</h1>
+    <hr class="w-25">
+    <div class="row">
+
+      <div class="col-lg-6 col-sm-12 col-12">
+        <img src="Img/bg3.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-6 col-sm-12 col-12 w-100">
+        <h1>Who We Are</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+<div class="container-fluid mt-5 mb-5 w-100">
+  <h1 class="text-center text-danger">Services</h1>
+    <hr class="w-25">
+
+</div> 
+<!-- cards -->
+  <div class="row text-center w-100 ml-auto">
+    <!-- sub-section1 starts -->
+    <div class="col-lg-4"   >
+      <div class="card" >
+  <img class="card-img-top" src="Img/c4.jpg">
+  <div class="card-body">
+    <h4 class="card-title">Popular</h4>
+    <p class="card-text">Click Below.</p>
+    <a href="#" class="btn btn-primary">See More</a>
+  </div>
+</div>
+    </div>
+    <!-- sub-section1 ends -->
+     <!-- sub-section2 starts -->
+        <div class="col-lg-4 ">
+      <div class="card" >
+  <img class="card-img-top" src="Img/c3.jpg">
+  <div class="card-body">
+    <h4 class="card-title">JavaScript</h4>
+    <p class="card-text">Learn JavaScript Below.</p>
+    <a href="#" class="btn btn-primary">See More</a>
+  </div>
+</div>
+    </div>
+     <!-- sub-section2 ends -->
+      <!-- sub-section3 starts -->
+        <div class="col-lg-4 ">
+      <div class="card" >
+  <img class="card-img-top" src="Img/c6.jpg">
+  <div class="card-body">
+    <h4 class="card-title">JQuery</h4>
+    <p class="card-text">Learn JQuery Below.</p>
+    <a href="#" class="btn btn-primary">See More</a>
+  </div>
+</div>
+    </div>
+     <!-- sub-section3 ends -->
+     <!-- sub-section4 starts -->
+        <div class="col-lg-4 mt-4">
+      <div class="card" >
+  <img class="card-img-top" src="Img/python.jpg">
+  <div class="card-body">
+    <h4 class="card-title">Python</h4>
+    <p class="card-text">Learn Pyhon Below.</p>
+    <a href="#" class="btn btn-primary">See More</a>
+  </div>
+</div>
+    </div>
+     <!-- sub-section4 ends -->
+      <!-- sub-section5 starts -->
+            <div class="col-lg-4 mt-4">
+      <div class="card" >
+  <img class="card-img-top" src="Img/cpp2.jpg.">
+  <div class="card-body">
+    <h4 class="card-title">C & C++</h4>
+    <p class="card-text">Learn C & C++ Below.</p>
+    <a href="#" class="btn btn-primary">See More</a>
+  </div>
+</div>
+    </div>
+     <!-- sub-section5 ends -->
+      <!-- sub-section6 starts -->
+            <div class="col-lg-4 mt-4">
+      <div class="card" >
+  <img class="card-img-top" src="Img/angular.png">
+  <div class="card-body">
+    <h4 class="card-title">Angular JS</h4>
+    <p class="card-text">Learn Angular JS Below.</p>
+    <a href="#" class="btn btn-primary">See More</a>
+  </div>
+</div>
+    </div>
+     <!-- sub-section1 starts -->
+    </div>
+</section>
+  <!-- services end -->
+  <!-- joining page start -->
+ca
+</section>
+
+<!-- joining page ends -->	
+<!-- contact us start -->
+  <!--Section: Contact v.2-->
+<section class="mb-0 ml-3">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-md-0 mb-5 col-lg-6">
+            <form id="contact-form" name="contact-form" action="homepage.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="your name" autocomplete="off">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Your Email" autocomplete="off"><br><br>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" autocomplete="off"><br><br>
+                  
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form text-center">
+                            <textarea  type="text" id="message" name="message" placeholder="your message" rows="2" class="form-control md-textarea"></textarea>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left mt-3">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-md-0 mb-5 col-lg-6 text-center">
+            <ul class="list-unstyled mb-5">
+                <li><i class="fa fa-map-marker" aria-hidden="true" style="font-size: 30px;"></i></i>
+                    <p>Santpeth,infront of vivek vardhini vidyalaya,pandarpur</p>
+                </li>
+
+                <li><i class="fa fa-phone mt-4 fa-2x"></i>
+                    <p>+ 91 8830231066</p>
+                </li>
+                <li><a href="#top" style="position: absolute; margin-left: 150px;font-size: 50px;color: black;"><i class="fa fa-arrow-up" title="go to top" aria-hidden="true" id="go-to-top"></i></a></li>
+                <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                    <p>contact@saiinfotech.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+
+<!-- contact us ends -->
+<section class="w-100">
+ <footer class="mainfooter mt-0" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>About us</h4>
+          <ul class="list-unstyled">
+            <li><a href="#"></a></li>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Visit Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">News and Updates</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Tutorials</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Website Tutorial</a></li>
+            <li><a href="#">SEO</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Social Media Marketing</a></li>
+            <!-- <li><a href="#">FAQs</a></li>
+            <li><a href="#">Webmaster</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Downloads</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">PDF Books</a></li>
+            <li><a href="#">Source Code</a></li>
+            <li><a href="#">plugins</a></li>
+            <li><a href="#">Editors</a></li>
+            <li><a href="#">Free Notes</a></li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <h4>Follow Us</h4>
+            <ul class="social-network social-circle">
+             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#" class="icoYoutube" title="youtube"><i class="fa fa-youtube"></i></a></li>
+             
+             <li><a href="#" class="icoInstagram" title="instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>       
+    </div>
+    </div>
+
+  <div class="row">
+    <div class="col-md-12 copy">
+      <p class="text-center">&copy; Copyright 200 - SaiInfoTech.  All rights reserved.</p>
+      <p class="text-center text-warning">Designed And Developed By Amit Kasabe</p>
+    </div>
+  </div>
+
+
+  </div>
+  </div>
+</footer>
+</section>
+<section>
+</section>
+   <script>
+        function myFunction(){
+            var preloader=document.getElementById('loading');
+            preloader.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+

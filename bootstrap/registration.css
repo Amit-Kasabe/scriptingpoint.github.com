@@ -1,0 +1,20 @@
+	.fm{
+		width: 320px;
+		margin: 70px auto;
+	}
+	form{
+		background: #f7f7f7;
+		padding: 30px;
+		margin-bottom: 15px;
+		box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+
+	}
+	.second{
+		margin: 50px auto
+	}
+	.second{
+		display:  none;
+	}
+	body{
+		background:linear-gradient(to right,#811599,#16BD9A);
+	}
